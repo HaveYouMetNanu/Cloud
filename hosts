@@ -1,0 +1,8 @@
+[storageserver]
+192.168.43.46   ansible_ssh_user=root  ansible_ssh_pass=ucantcme
+
+[webserver]
+192.168.43.150  ansible_ssh_user=root  ansible_ssh_pass=blackhat
+
+[clientserver]
+192.168.43.150   ansible_ssh_user=root  ansible_ssh_pass=blackhat

@@ -1,0 +1,16 @@
+----
+- hosts: web
+  tasks:
+   - package:
+        name: "docker-engine"
+        state: present
+   - service: 
+        name: "docker" 
+        state: restarted
+   - name: Load Image
+        docker_image:
+          name: localhost:5000/images
+          tag: v1
+          push: yes
+          load_path: mypythoncgi.tar
+        
